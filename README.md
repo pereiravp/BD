@@ -6,8 +6,10 @@ Relational database for an event management platform, modelled and implemented i
 
 Group 23 — BSc in Computer Science, University of Minho:
 
-- **Gonçalo Simões Pereira**
-<!-- Add the remaining group members here -->
+- **Gonçalo Pereira - @pereiravp **
+- **David Mimoso - @davidmimoso **
+- **João Paulo - @jotapaulo9 **
+- **João Pontes - @juanjuan **
 
 ## Overview
 
