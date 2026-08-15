@@ -1,15 +1,15 @@
-# CORE — Event Management Database
+# CORE: Event Management Database
 
 Relational database for an event management platform, modelled and implemented in **MySQL**. The schema covers events, sessions, spaces and rooms, participants and users, registrations, tickets, evaluations, organizers, staff and sponsors, together with the views, stored routines and triggers that enforce the core business rules. Bases de Dados course project at the University of Minho.
 
 ## Authors
 
-Group 23 — BSc in Computer Science, University of Minho:
+Group 23, BSc in Computer Science, University of Minho:
 
-- Gonçalo Pereira - @pereiravp 
-- David Mimoso - @davidmimoso 
-- João Paulo - @jotapaulo9
-- João Pontes - @juanjuan 
+- Gonçalo Pereira ([@pereiravp](https://github.com/pereiravp))
+- David Mimoso ([@davidmimoso](https://github.com/davidmimoso))
+- João Paulo ([@jotapaulo9](https://github.com/jotapaulo9))
+- João Pontes ([@juanjuan](https://github.com/juanjuan))
 
 ## Overview
 
@@ -28,10 +28,10 @@ The database models the operation of an events platform. Around the central **EV
 
 ### Programmable objects
 
-- **View `vw_agenda_eventos`** — a ready-to-query agenda joining each event with its sessions and rooms (event, session, date, start time, room).
-- **Function `fn_vagas_disponiveis(evento_id)`** — returns the number of remaining seats for an event, computed as the venue capacity minus the paid registrations.
-- **Procedure `sp_confirmar_inscricao(id_inscricao)`** — confirms a registration by setting its state to *Pago* (paid).
-- **Trigger `trg_valida_pagamento`** — runs before a new row is inserted into `INSCRIÇÃO` to validate the payment state.
+- **View `vw_agenda_eventos`**: a ready-to-query agenda joining each event with its sessions and rooms (event, session, date, start time, room).
+- **Function `fn_vagas_disponiveis(evento_id)`**: returns the number of remaining seats for an event, computed as the venue capacity minus the paid registrations.
+- **Procedure `sp_confirmar_inscricao(id_inscricao)`**: confirms a registration by setting its state to *Pago* (paid).
+- **Trigger `trg_valida_pagamento`**: runs before a new row is inserted into `INSCRIÇÃO` to validate the payment state.
 
 ## Running It
 
